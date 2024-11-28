@@ -1,46 +1,74 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Entrevista Virtual
 
-## Available Scripts
+Este projeto é uma aplicação de entrevista virtual desenvolvida com React, TypeScript, Ant Design e Styled Components. A aplicação é interativa e inclui funcionalidades como gravação de áudio, timer de contagem regressiva, sistema de avaliação pessoal e exibição de erros.
 
-In the project directory, you can run:
+## 🌟 Visão Geral
 
-### `npm start`
+A aplicação simula uma experiência de entrevista online, com funcionalidades como:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Gravação de Respostas**: Permite aos usuários gravarem respostas de áudio para perguntas específicas.
+- **Timer de Contagem Regressiva**: Garante que as respostas sejam dadas dentro de um tempo limite.
+- **Avaliação Pessoal**: Permite ao candidato avaliar seu desempenho ao final da entrevista.
+- **Sistema de Erros**: Fornece feedback claro em caso de falhas, como problemas com permissões de microfone.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠 Funcionalidades
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Perguntas de Entrevista**:
+  - Perguntas categorizadas e com diferentes níveis de dificuldade.
+  - Navegação entre perguntas.
+  
+- **Gravação de Áudio**:
+  - Início e parada de gravações.
+  - Reprodução e exclusão de gravações.
+  
+- **Timer de Contagem Regressiva**:
+  - Visualização do tempo restante para cada resposta.
+  - Mudança automática para a próxima pergunta ao término do tempo.
 
-### `npm run build`
+- **Autoavaliação**:
+  - Classificação por confiança, clareza e profundidade técnica.
+  - Campos para reflexões finais.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Interface de Erros**:
+  - Alerta em caso de falhas, como ausência de permissões.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🗂 Estrutura do Projeto
 
-### `npm run eject`
+```plaintext
+src/
+├── components/
+│   ├── AudioRecorder/       # Componente para gravação de áudio
+│   ├── Countdown/           # Timer com contagem regressiva
+│   ├── ErrorDisplay/        # Exibição de mensagens de erro
+│   └── SelfAssessmentForm/  # Formulário de autoavaliação
+├── contexts/                # Context API para gerenciar estado global
+├── hooks/                   # Hooks personalizados
+├── constants/               # Constantes usadas no projeto
+├── services/                # Serviços para integração com backend ou lógica externa
+├── types/                   # Tipagens TypeScript
+└── utils/                   # Funções utilitárias
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠 Tecnologias Utilizadas
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **React:** Biblioteca principal para desenvolvimento da interface.
+- **TypeScript:** Tipagem estática para maior segurança no código.
+- **Ant Design:** Biblioteca de componentes UI.
+- **Styled Components:** Estilização baseada em componentes.
+- **UUID:** Geração de identificadores únicos.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🚀 Rodando o projeto
 
-## Learn More
+1. **Inicie o servidor de desenvolvimento:** Após clonar o projeto e instalar as dependências, execute o seguinte comando:
+  
+```
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. **Acesse a aplicação:** Abra o navegador e vá para http://localhost:3000.
